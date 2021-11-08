@@ -1,4 +1,4 @@
-# Getting Started with Create React App
+# Habit Theory
 
 This project is a web application for [Habit Theory](http://habit-theory.com).
 

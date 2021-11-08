@@ -67,11 +67,84 @@ function App() {
         </div>
       </section>
 
-      <section className="founders">Founders</section>
+      <section className="founders">
+        <div className="image-grid">
+          <img alt="Krishnendu" />
+          
+          <img alt="Arun" />
+          
+          <img alt="Kiran" />
+        </div>
 
-      <section className="what-we-live-by">What we live by</section>
+        <header className="section-header">          
+          <h2 className="section-title">Founders</h2>
+        </header>
 
-      <section className="why-choose-us">Why choose us</section>
+        <div className="entry">
+          <p>Krishnendu, Arun and Kiran came together to found Habit Theory on the belief that science and stories are two of the most powerful ways to inspire anyone. They have diverse experience in areas ranging from personal coaching to <strong>organizational/(organisational)</strong> problem solving</p>
+        </div>
+      </section>
+
+      <section className="what-we-live-by">
+        <header className="section-header">          
+          <h2 className="section-title">What we live by</h2>
+        </header>
+
+        <div className="icons-list-wrapper">
+          <ul className="icons-list">
+            <li className="list-item">
+              <img alt="Curiosity" />
+              <strong>Curiosity</strong>
+            </li>
+
+            <li className="list-item">
+              <img alt="Learning" />
+              <strong>Learning</strong>
+            </li>
+
+            <li className="list-item">
+              <img alt="Humour" />
+              <strong>Humour</strong>
+            </li>
+
+            <li className="list-item">
+              <img alt="Science" />
+              <strong>Science</strong>
+            </li>
+
+            <li className="list-item">
+              <img alt="Stories" />
+              <strong>Stories</strong>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <section className="why-choose-us">
+        <header className="section-header">          
+          <h2 className="section-title">Why choose us</h2>
+        </header>
+
+        <div className="section-content">
+          <div className="icon-wrap">
+            <img alt="Why choose us?" />
+          </div>
+
+          <div className="details-wrap">
+            <ul>
+              <li>
+                <h4>Our Mission</h4>
+                <p>To use science and stories to help people build productive microhabits in the workplace.</p>
+              </li>
+
+              <li>
+                <h4>Our Vision</h4>
+                <p>A day everyone can find meaning in <strong>the/(their)</strong> workplace.</p>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
     </div>
   );
 }

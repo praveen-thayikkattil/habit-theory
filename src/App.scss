@@ -1,5 +1,5 @@
 .App {
-  text-align: center;
+  // text-align: center;
 }
 
 .App-logo {
@@ -104,7 +104,7 @@
   @media screen and (min-width: 960px) {
     padding: 80px 0;
   }
-  @media screen and (min-width: 960px) {
+  @media screen and (min-width: 1200px) {
     padding: 100px 0;
   }
   .section-header {
@@ -114,13 +114,14 @@
     border-top-right-radius: 50px;
     padding-top: 40px;
     padding-bottom: 40px;
+    text-align: center;
     @media screen and (min-width: 768px) {
       padding: 60px 0;
     }
     @media screen and (min-width: 960px) {
       padding: 80px 0;
     }
-    @media screen and (min-width: 960px) {
+    @media screen and (min-width: 1200px) {
       padding: 100px 0;
     }
     .section-icon {}
@@ -134,7 +135,7 @@
       @media screen and (min-width: 960px) {
         font-size: 24px;
       }
-      @media screen and (min-width: 960px) {
+      @media screen and (min-width: 1200px) {
         font-size: 27px;
       }
     }
@@ -149,7 +150,7 @@
     @media screen and (min-width: 960px) {
       padding: 0 80px;
     }
-    @media screen and (min-width: 960px) {
+    @media screen and (min-width: 1200px) {
       padding: 0 100px 0 120px;
     }
     p {
@@ -169,6 +170,243 @@
       @media screen and (min-width: 960px) {
         font-size: 24px;
         line-height: 1.5;
+      }
+    }
+  }
+}
+
+.our-services {
+  padding: 40px 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row-reverse;
+  @media screen and (min-width: 768px) {
+    padding: 60px 0;
+  }
+  @media screen and (min-width: 960px) {
+    padding: 80px 0;
+  }
+  @media screen and (min-width: 1200px) {
+    padding: 100px 0;
+  }
+  .section-header {
+    background: black;
+    color: white;
+    width: 40%;
+    border-top-left-radius: 50px;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    text-align: center;
+    @media screen and (min-width: 768px) {
+      padding: 60px 0;
+    }
+    @media screen and (min-width: 960px) {
+      padding: 80px 0;
+    }
+    @media screen and (min-width: 1200px) {
+      padding: 100px 0;
+    }
+    .section-icon {}
+    .section-title {
+      margin: 0;
+      padding: 0;
+      font-size: 20px;
+      @media screen and (min-width: 768px) {
+        font-size: 22px;
+      }
+      @media screen and (min-width: 960px) {
+        font-size: 24px;
+      }
+      @media screen and (min-width: 1200px) {
+        font-size: 27px;
+      }
+    }
+  }
+  .entry {
+    width: 60%;
+    padding-left: 40px;
+    padding-right: 40px;
+    @media screen and (min-width: 768px) {
+      padding: 0 60px;
+    }
+    @media screen and (min-width: 960px) {
+      padding: 0 80px;
+    }
+    @media screen and (min-width: 1200px) {
+      padding: 0 100px 0 120px;
+    }
+    p {
+      font-size: 12px;
+      margin: 0;
+      padding: 0;
+      text-align: justify;
+      line-height: 1.2;
+      @media screen and (min-width: 768px) {
+        font-size: 16px;
+        line-height: 1.5;
+      }
+      @media screen and (min-width: 960px) {
+        font-size: 18px;
+        line-height: 1.3;
+      }
+      @media screen and (min-width: 1200px) {
+        font-size: 24px;
+        line-height: 1.5;
+      }
+    }
+  }
+}
+
+.clients-loved-these {
+  padding: 0 40px;
+  @media screen and (min-width: 768px) {
+    padding: 0 60px;
+  }
+  @media screen and (min-width: 960px) {
+    padding: 0 80px;
+  }
+  @media screen and (min-width: 1200px) {
+    padding: 0 100px;
+  }
+  .love-list {
+    .list-item {
+      width: 50%;
+      font-size: 27px;
+      font-weight: bold;
+      @media screen and (min-width: 768px) {
+        font-size: 30px;
+      }
+      @media screen and (min-width: 960px) {
+        font-size: 36px;
+      }
+      @media screen and (min-width: 1200px) {
+        font-size: 48px;
+      }
+      &:nth-of-type(odd) {
+        margin-left: 50%;
+      }
+      h3 {
+        text-align: left;
+        font-size: 16px;
+        margin: 0;
+        padding: 0;
+        position: relative;
+        top: -7px;
+        @media screen and (min-width: 768px) {
+          font-size: 18px;
+          top: -10px;
+        }
+        @media screen and (min-width: 960px) {
+          font-size: 24px;
+          top: -16px;
+        }
+        @media screen and (min-width: 1200px) {
+          font-size: 27px;
+        }
+      }
+      p {
+        text-align: left;
+        font-size: 12px;
+        font-weight: normal;
+        position: relative;
+        top: -16px;
+        @media screen and (min-width: 768px) {
+          font-size: 13px;
+          top: -18px;
+        }
+        @media screen and (min-width: 960px) {
+          font-size: 14px;
+          top: -20px;
+        }
+        @media screen and (min-width: 1200px) {
+          font-size: 16px;
+          top: -24px;
+        }
+      }
+    }
+  }
+}
+
+.founders {
+  .image-grid {
+    display: flex;
+    .image-wrapper {
+      flex: 1;
+      img {
+        max-width: 100%;
+      }
+    }
+  }
+
+  .section-header {
+    background: black;
+    display: inline-block;
+    margin-top: 20px;
+    .section-title {
+      color: white;
+      margin: 0;
+      padding: 15px 40px;
+      font-size: 18px;
+    }
+  }
+
+  .entry {
+    margin: 0;
+    padding: 20px 40px;
+    text-align: justify;
+    font-size: 12px;
+    line-height: 1.5;
+    @media screen and (min-width: 768px) {
+      font-size: 14px;
+    }
+    @media screen and (min-width: 960px) {
+      font-size: 16px;
+    }
+    @media screen and (min-width: 1200px) {
+      font-size: 18px;
+    }
+  }
+}
+
+.what-we-live-by {
+  .section-header {
+    margin-top: 20px;
+    text-align: right;
+    .section-title {
+      background: black;
+      color: white;
+      margin: 0;
+      padding: 15px 40px;
+      display: inline-block;
+      font-size: 18px;
+    }
+  }
+  .icons-list-wrapper {
+    margin-top: 40px;
+    padding: 0 40px;
+    .icons-list {
+      display: flex;
+      justify-content: space-between;
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      .list-item {
+        flex: 1;
+        width: 30%;
+        text-align: center;
+        margin: 0;
+        padding: 0;
+        img {
+          display: block;
+          max-width: 100%;
+          margin: 0 auto 10px auto;
+          height: 48px;
+          width: 48px;
+        }
+        strong {
+          text-align: center;
+        }
       }
     }
   }

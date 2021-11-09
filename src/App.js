@@ -40,40 +40,49 @@ function App() {
 
         <div className="entry">
           <p>We create training programs based on the specific problems that our cients need to solve and create a <strong>customized/(customised)</strong> training plan based entirely on scientific evidence. Powerful stories and <strong>humor/(humour)</strong> are our way of helping people acquire new skills, knowledge and <strong>attitudes/(attitude)</strong>. The following are some of our training programs that clients loved the most.</p>
-
-          <div className="clients-loved-these">
-            <ol className="love-list">
-              <li className="list-item">
-                <h3>Workshop on calming your busy mind</h3>
-                <p>We use the science of stress, exercise, meditiation and diet to help you clear your mind and be more productive.</p>
-              </li>
-
-              <li className="list-item">
-                <h3>Workshop on becoming a productivity ninja</h3>
-                <p>We use the science of willpower and procrastination to help you become super-productive.</p>
-              </li>
-
-              <li className="list-item">
-                <h3>Workshop on becoming a master learner</h3>
-                <p>We use the science of focused and <strong>diffuse/(diffused)</strong> modes to help you learn anything faster.</p>
-              </li>
-
-              <li className="list-item">
-                <h3>Workshop on the checklist manifesto</h3>
-                <p>We use the power of checklist to train you on the meticulous execution of different processes in the workplace.</p>
-              </li>
-            </ol>
-          </div>
         </div>
       </section>
 
+      <div className="clients-loved-these">
+        <ol className="love-list">
+          <li className="list-item">
+            <h3>Workshop on calming your busy mind</h3>
+            <p>We use the science of stress, exercise, meditiation and diet to help you clear your mind and be more productive.</p>
+          </li>
+
+          <li className="list-item">
+            <h3>Workshop on becoming a productivity ninja</h3>
+            <p>We use the science of willpower and procrastination to help you become super-productive.</p>
+          </li>
+
+          <li className="list-item">
+            <h3>Workshop on becoming a master learner</h3>
+            <p>We use the science of focused and <strong>diffuse/(diffused)</strong> modes to help you learn anything faster.</p>
+          </li>
+
+          <li className="list-item">
+            <h3>Workshop on the checklist manifesto</h3>
+            <p>We use the power of checklist to train you on the meticulous execution of different processes in the workplace.</p>
+          </li>
+        </ol>
+      </div>
+
       <section className="founders">
         <div className="image-grid">
-          <img alt="Krishnendu" />
+          <div className="image-wrapper">
+            <img src="https://loremflickr.com/1080/1920
+" alt="Krishnendu" />
+          </div>
           
-          <img alt="Arun" />
-          
-          <img alt="Kiran" />
+          <div className="image-wrapper">
+          <img src="https://loremflickr.com/1080/1920
+" alt="Arun" />
+          </div>
+
+          <div className="image-wrapper">
+          <img src="https://loremflickr.com/1080/1920
+" alt="Kiran" />
+          </div>
         </div>
 
         <header className="section-header">          
@@ -93,27 +102,27 @@ function App() {
         <div className="icons-list-wrapper">
           <ul className="icons-list">
             <li className="list-item">
-              <img alt="Curiosity" />
+              <img src="https://loremflickr.com/100/100" alt="Curiosity" />
               <strong>Curiosity</strong>
             </li>
 
             <li className="list-item">
-              <img alt="Learning" />
+              <img src="https://loremflickr.com/100/100" alt="Learning" />
               <strong>Learning</strong>
             </li>
 
             <li className="list-item">
-              <img alt="Humour" />
+              <img src="https://loremflickr.com/100/100" alt="Humour" />
               <strong>Humour</strong>
             </li>
 
             <li className="list-item">
-              <img alt="Science" />
+              <img src="https://loremflickr.com/100/100" alt="Science" />
               <strong>Science</strong>
             </li>
 
             <li className="list-item">
-              <img alt="Stories" />
+              <img src="https://loremflickr.com/100/100" alt="Stories" />
               <strong>Stories</strong>
             </li>
           </ul>

@@ -25,7 +25,7 @@ function App() {
         </header>
 
         <div className="entry">
-          <p>We are educators who use science and stories to help people find meaning in the workplace. Our team is on the constant lookout for the world's finest research on productivity, efficiency, stress, self-control, learning and leadership. We curate our research from some of the most remarkable institutions in the world and use those <strong>insight/(insights)</strong> to systematically solve problems in the workplace and help organisations and people relate to their work expressively</p>
+          <p>We are educators who use science and stories to help people find meaning in the workplace. Our team is on the constant lookout for the world's finest research on productivity, efficiency, stress, self-control, learning and leadership. We curate our research from some of the most remarkable institutions in the world and use those insight to systematically solve problems in the workplace and help organisations and people relate to their work expressively.</p>
         </div>
       </section>
 
@@ -39,7 +39,7 @@ function App() {
         </header>
 
         <div className="entry">
-          <p>We create training programs based on the specific problems that our cients need to solve and create a <strong>customized/(customised)</strong> training plan based entirely on scientific evidence. Powerful stories and <strong>humor/(humour)</strong> are our way of helping people acquire new skills, knowledge and <strong>attitudes/(attitude)</strong>. The following are some of our training programs that clients loved the most.</p>
+          <p>We create training programs based on the specific problems that our cients need to solve and create a customized training plan based entirely on scientific evidence. Powerful stories and humor are our way of helping people acquire new skills, knowledge and attitudes. The following are some of our training programs that clients loved the most.</p>
         </div>
       </section>
 
@@ -57,7 +57,7 @@ function App() {
 
           <li className="list-item">
             <h3>Workshop on becoming a master learner</h3>
-            <p>We use the science of focused and <strong>diffuse/(diffused)</strong> modes to help you learn anything faster.</p>
+            <p>We use the science of focused and diffuse modes to help you learn anything faster.</p>
           </li>
 
           <li className="list-item">
@@ -90,7 +90,7 @@ function App() {
         </header>
 
         <div className="entry">
-          <p>Krishnendu, Arun and Kiran came together to found Habit Theory on the belief that science and stories are two of the most powerful ways to inspire anyone. They have diverse experience in areas ranging from personal coaching to <strong>organizational/(organisational)</strong> problem solving</p>
+          <p>Krishnendu, Arun and Kiran came together to found Habit Theory on the belief that science and stories are two of the most powerful ways to inspire anyone. They have diverse experience in areas ranging from personal coaching to organizational problem solving.</p>
         </div>
       </section>
 

@@ -136,7 +136,7 @@ function App() {
 
         <div className="section-content">
           <div className="icon-wrap">
-            <img alt="Why choose us?" />
+            <img src="https://loremflickr.com/200/200" alt="Why choose us?" />
           </div>
 
           <div className="details-wrap">

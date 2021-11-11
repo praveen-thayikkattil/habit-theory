@@ -1,5 +1,6 @@
 import Header from './components/Header';
 import whoWeAreIcon from './assets/images/who-we-are-icon.png';
+import ourServicesIcon from './assets/images/our-services-icon.png';
 import './App.scss';
 
 function App() {
@@ -30,7 +31,7 @@ function App() {
       <section id="our-services" className="our-services">
         <header className="section-header">
           <figure className="section-icon our-services-icon">
-            <img alt="Our services" />
+            <img src={ourServicesIcon} alt="Our services" />
           </figure>
         
           <h2 className="section-title">Our services</h2>

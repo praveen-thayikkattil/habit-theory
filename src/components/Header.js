@@ -11,7 +11,7 @@ const Header = () => {
 
     return (
         <>
-            <nav className="main-nav">
+            <nav className={`main-nav ${navOpen ? 'open' : 'close'}`}>
                 <ul className="menu">
                     <li className="menu-item">
                         <a href="#who-we-are">who we are</a>
@@ -26,7 +26,7 @@ const Header = () => {
                     </li>
 
                     <li className="menu-item">
-                        <a href="#what-we-live-by">what-we-live-by</a>
+                        <a href="#what-we-live-by">what we live by</a>
                     </li>
 
                     <li className="menu-item">

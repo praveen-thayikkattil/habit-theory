@@ -1,3 +1,4 @@
+import { FaBars } from 'react-icons/fa';
 import './App.scss';
 
 function App() {
@@ -6,7 +7,9 @@ function App() {
       <header className="app-header">
         <h1 className="app-logo" title="Habit Theory">Habit Theory</h1>
 
-        <button className="nav-open">MENU</button>
+        <button className="nav-open">
+          <FaBars />
+        </button>
       </header>
 
       <section className="home-hero">

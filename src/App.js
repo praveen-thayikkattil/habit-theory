@@ -1,16 +1,10 @@
-import { FaBars } from 'react-icons/fa';
+import Header from './components/Header';
 import './App.scss';
 
 function App() {
   return (
     <div className="App">
-      <header className="app-header">
-        <h1 className="app-logo" title="Habit Theory">Habit Theory</h1>
-
-        <button className="nav-open">
-          <FaBars />
-        </button>
-      </header>
+      <Header />
 
       <section className="home-hero">
         <blockquote>
@@ -18,7 +12,7 @@ function App() {
         </blockquote>
       </section>
 
-      <section className="who-we-are">
+      <section id="who-we-are" className="who-we-are">
         <header className="section-header">
           <figure className="section-icon who-we-are-icon">
             <img alt="Who we are" />
@@ -32,7 +26,7 @@ function App() {
         </div>
       </section>
 
-      <section className="our-services">
+      <section id="our-services" className="our-services">
         <header className="section-header">
           <figure className="section-icon our-services-icon">
             <img alt="Our services" />
@@ -70,7 +64,7 @@ function App() {
         </ol>
       </div>
 
-      <section className="founders">
+      <section id="founders" className="founders">
         <div className="image-grid">
           <div className="image-wrapper">
             <img src="https://loremflickr.com/1080/1920
@@ -97,7 +91,7 @@ function App() {
         </div>
       </section>
 
-      <section className="what-we-live-by">
+      <section id="what-we-live-by" className="what-we-live-by">
         <header className="section-header">          
           <h2 className="section-title">What we live by</h2>
         </header>
@@ -132,7 +126,7 @@ function App() {
         </div>
       </section>
 
-      <section className="why-choose-us">
+      <section id="why-choose-us" className="why-choose-us">
         <header className="section-header">          
           <h2 className="section-title">Why choose us</h2>
         </header>

@@ -1,4 +1,5 @@
 import Header from './components/Header';
+import whoWeAreIcon from './assets/images/who-we-are-icon.png';
 import './App.scss';
 
 function App() {
@@ -15,7 +16,7 @@ function App() {
       <section id="who-we-are" className="who-we-are">
         <header className="section-header">
           <figure className="section-icon who-we-are-icon">
-            <img alt="Who we are" />
+            <img src={whoWeAreIcon} alt="Who we are" />
           </figure>
           
           <h2 className="section-title">Who we are</h2>

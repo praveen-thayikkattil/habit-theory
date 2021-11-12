@@ -1,6 +1,9 @@
 import Header from './components/Header';
 import whoWeAreIcon from './assets/images/who-we-are-icon.png';
 import ourServicesIcon from './assets/images/our-services-icon.png';
+import KrishnenduImage from './assets/images/founder-krishnendu.png';
+import ArunImage from './assets/images/founder-arun.png';
+import KiranImage from './assets/images/founder-kiran.png';
 import './App.scss';
 
 function App() {
@@ -69,18 +72,15 @@ function App() {
       <section id="founders" className="founders">
         <div className="image-grid">
           <div className="image-wrapper">
-            <img src="https://loremflickr.com/1080/1920
-" alt="Krishnendu" />
+            <img src={KrishnenduImage} alt="Krishnendu" />
           </div>
           
           <div className="image-wrapper">
-          <img src="https://loremflickr.com/1080/1920
-" alt="Arun" />
+          <img src={ArunImage} alt="Arun" />
           </div>
 
           <div className="image-wrapper">
-          <img src="https://loremflickr.com/1080/1920
-" alt="Kiran" />
+          <img src={KiranImage} alt="Kiran" />
           </div>
         </div>
 

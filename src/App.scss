@@ -2,11 +2,6 @@
   font-family: 'Fjalla One', sans-serif;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
 .main-nav {
   background: white;
   transition: all 0.5s ease-in-out;
@@ -70,6 +65,7 @@
     margin-left: 40px;
     font-size: 18px;
     transition: all 0.3s ease-out;
+    font-weight: normal;
     @media screen and (min-width: 768px) {
       font-size: 22px;
     }
@@ -128,8 +124,10 @@
     p {
       margin-top: 0;
       font-size: 18px;
+      line-height: 1.4;
       @media screen and (min-width: 768px) {
         font-size: 24px;
+        line-height: 1.5;
       }
       @media screen and (min-width: 960px) {
         font-size: 36px;

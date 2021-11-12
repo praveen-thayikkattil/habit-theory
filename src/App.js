@@ -76,11 +76,11 @@ function App() {
           </div>
           
           <div className="image-wrapper">
-          <img src={ArunImage} alt="Arun" />
+            <img src={ArunImage} alt="Arun" />
           </div>
 
           <div className="image-wrapper">
-          <img src={KiranImage} alt="Kiran" />
+            <img src={KiranImage} alt="Kiran" />
           </div>
         </div>
 

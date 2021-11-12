@@ -419,9 +419,60 @@
     display: flex;
     .image-wrapper {
       flex: 1;
+      position: relative;
+      overflow: hidden;
+      filter: grayscale(.8);
+      -webkit-filter: grayscale(.8);
+      &:before {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        z-index: 2;
+        display: block;
+        content: '';
+        width: 0;
+        height: 0;
+        background: rgba(0,0,0,.2);
+        border-radius: 100%;
+        transform: translate(-50%, -50%);
+        opacity: 0;
+      }
+      &:hover {
+        animation: bloom ease-in-out .75s forwards;
+        &:before {
+          animation: circle .75s;
+        }
+      }
       img {
         max-width: 100%;
       }
+    }
+  }
+  @keyframes bloom {
+    0% {
+      filter: grayscale(.8);
+    }
+    40% {
+      filter: grayscale(.5);
+    }
+    100% {
+      filter: grayscale(0);
+    }
+  }
+  @keyframes circle {
+    0% {
+      opacity: .5;
+      background: rgba(213,156,34,.2);
+      
+    }
+    40% {
+      opacity: 1;
+      background: rgba(213,34,160,.2);
+    }
+    100% {
+      width: 200%;
+      height: 200%;
+      opacity: 0;
     }
   }
 

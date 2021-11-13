@@ -99,14 +99,15 @@
   align-items: center;
   justify-content: center;
   transition: all 0.3s ease-out;
+  height: calc(100vh - 60px);
   @media screen and (min-width: 768px) {
-    height: 360px;
+    // height: 360px;
   }
   @media screen and (min-width: 960px) {
-    height: 480px;
+    // height: 480px;
   }
   @media screen and (min-width: 1200px) {
-    height: 600px;
+    // height: 600px;
   }
   blockquote {
     margin: 0;
@@ -146,6 +147,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  width: 100vw;
   @media screen and (min-width: 768px) {
     padding: 60px 0;
   }
@@ -239,6 +241,7 @@
   align-items: center;
   justify-content: center;
   flex-direction: row-reverse;
+  width: 100vw;
   @media screen and (min-width: 768px) {
     padding: 60px 0;
   }
@@ -328,6 +331,7 @@
 
 .clients-loved-these {
   padding: 0 40px;
+  width: 100vw;
   @media screen and (min-width: 768px) {
     padding: 0 60px;
   }
@@ -398,6 +402,7 @@
 }
 
 .founders {
+  width: 100vw;
   .image-grid {
     display: flex;
     .image-wrapper {
@@ -501,6 +506,7 @@
 }
 
 .what-we-live-by {
+  width: 100vw;
   .section-header {
     margin-top: 20px;
     text-align: right;

@@ -178,35 +178,55 @@ function App() {
         </ScrollPage>
 
         <ScrollPage page={6}>
-            <section id="why-choose-us" className="why-choose-us">
-              <header className="section-header">          
-                <h2 className="section-title">Why choose us</h2>
-              </header>
+          <section id="why-choose-us" className="why-choose-us">
+            <header className="section-header">          
+              <h2 className="section-title">Why choose us</h2>
+            </header>
 
-              <div className="section-content">
-                <div className="icon-wrap">
-                  <img src="https://loremflickr.com/200/200" alt="Why choose us?" />
-                </div>
-
-                <div className="details-wrap">
-                  <ul>
-                    <li>
-                      <h4>Our Mission</h4>
-                      <p>To use science and stories to help people build productive microhabits in the workplace.</p>
-                    </li>
-
-                    <li>
-                      <h4>Our Vision</h4>
-                      <p>A day everyone can find meaning in <strong>the/(their)</strong> workplace.</p>
-                    </li>
-                  </ul>
-                </div>
+            <div className="section-content">
+              <div className="icon-wrap">
+                <img src="https://loremflickr.com/200/200" alt="Why choose us?" />
               </div>
-            </section>
+
+              <div className="details-wrap">
+                <ul>
+                  <li>
+                    <h4>Our Mission</h4>
+                    <p>To use science and stories to help people build productive microhabits in the workplace.</p>
+                  </li>
+
+                  <li>
+                    <h4>Our Vision</h4>
+                    <p>A day everyone can find meaning in <strong>the/(their)</strong> workplace.</p>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </section>
+        </ScrollPage>
+
+        <ScrollPage page={7}>
+        <Animator animation={FadeUp}>
+          <footer className="app-footer">
+            <div className="contact-details">
+              <address>
+                <h3 className="company-name">Habit Theory Pvt Ltd</h3>
+                <p>First Floor, Anna Maria Complex 62, 5383 A<br />
+                PT Usha Road, Kochi, Kerala, 682011</p>
+
+                <span className="email">director@habittheory.in</span>
+
+                <span className="phone">Kiran Ramachandran: +91 9995918705</span>
+              </address>
+            </div>
+
+            <header className="section-header">
+              <h2 className="section-title">Contact Us</h2>
+            </header>
+          </footer>
+        </Animator>
         </ScrollPage>
       </ScrollContainer>
-
-      
     </div>
   );
 }

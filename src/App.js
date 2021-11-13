@@ -1,3 +1,4 @@
+import TypeWriterEffect from 'react-typewriter-effect';
 import Header from './components/Header';
 import whoWeAreIcon from './assets/images/who-we-are-icon.png';
 import ourServicesIcon from './assets/images/our-services-icon.png';
@@ -12,9 +13,14 @@ function App() {
       <Header />
 
       <section className="home-hero">
-        <blockquote>
-          <p>"We use insights from neuroscience, psychology and behavioural economics to help our clients build productive microhabits."</p>
-        </blockquote>
+        <blockquote><TypeWriterEffect
+          textStyle={{ fontFamily: 'Fjalla One' }}
+          startDelay={100}
+          cursorColor="white"
+          text='"We use insights from neuroscience, psychology and behavioural economics to help our clients build productive microhabits."'
+          typeSpeed={100}
+          // scrollArea={myAppRef}
+        /></blockquote>
       </section>
 
       <section id="who-we-are" className="who-we-are">

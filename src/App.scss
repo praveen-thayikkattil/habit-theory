@@ -1,7 +1,5 @@
 .App {
   font-family: 'Fjalla One', sans-serif;
-  max-width: 1280px;
-  margin: 0 auto;
 }
 
 .main-nav {
@@ -716,11 +714,5 @@
         }
       }
     }
-  }
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
   }
 }

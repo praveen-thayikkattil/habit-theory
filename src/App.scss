@@ -5,6 +5,8 @@
 .main-nav {
   background: white;
   transition: all 0.5s ease-in-out;
+  position: relative;
+  overflow: hidden;
   &.open {
     height: 260px;
   }
@@ -52,6 +54,7 @@
   color: white;
   height: 60px;
   transition: all 0.3s ease-out;
+  position: relative;
   @media screen and (min-width: 768px) {
     height: 80px;
   }
@@ -147,7 +150,6 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 100vw;
   @media screen and (min-width: 768px) {
     padding: 60px 0;
   }
@@ -241,7 +243,6 @@
   align-items: center;
   justify-content: center;
   flex-direction: row-reverse;
-  width: 100vw;
   @media screen and (min-width: 768px) {
     padding: 60px 0;
   }
@@ -331,7 +332,6 @@
 
 .clients-loved-these {
   padding: 0 40px;
-  width: 100vw;
   @media screen and (min-width: 768px) {
     padding: 0 60px;
   }
@@ -402,65 +402,20 @@
 }
 
 .founders {
-  width: 100vw;
   .image-grid {
     display: flex;
     .image-wrapper {
       flex: 1;
-      position: relative;
-      overflow: hidden;
-      filter: grayscale(.8);
-      -webkit-filter: grayscale(.8);
-      &:before {
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        z-index: 2;
-        display: block;
-        content: '';
-        width: 0;
-        height: 0;
-        background: rgba(0,0,0,.2);
-        border-radius: 100%;
-        transform: translate(-50%, -50%);
-        opacity: 0;
-      }
+      filter: sepia(0);
+      -webkit-filter: sepia(0);
+      transition: all 0.75s ease-in-out;
       &:hover {
-        animation: bloom ease-in-out .75s forwards;
-        &:before {
-          animation: circle .75s;
-        }
+        filter: sepia(0.3);
+        -webkit-filter: sepia(0.3);
       }
       img {
         max-width: 100%;
       }
-    }
-  }
-  @keyframes bloom {
-    0% {
-      filter: grayscale(.8);
-    }
-    40% {
-      filter: grayscale(.5);
-    }
-    100% {
-      filter: grayscale(0);
-    }
-  }
-  @keyframes circle {
-    0% {
-      opacity: .5;
-      background: rgba(213,156,34,.2);
-      
-    }
-    40% {
-      opacity: 1;
-      background: rgba(213,34,160,.2);
-    }
-    100% {
-      width: 200%;
-      height: 200%;
-      opacity: 0;
     }
   }
 
@@ -506,7 +461,6 @@
 }
 
 .what-we-live-by {
-  width: 100vw;
   .section-header {
     margin-top: 20px;
     text-align: right;
@@ -593,15 +547,9 @@
   margin-top: 40px;
   border-top-right-radius: 50px;
   position: relative;
-  &:after {
-    content: '';
-    display: block;
-    background: white;
-    height: 20px;
-    width: 100%;
-    left: 0;
-    bottom: 0;
-  }
+  height: 100vh;
+  align-items: center;
+  justify-content: center;
   .section-header {
     position: relative;
     &:after {
@@ -641,32 +589,6 @@
     align-items: center;
     padding: 40px;
     position: relative;
-    &:after {
-      position: absolute;
-      display: block;
-      content: '';
-      background: white;
-      height: 40px;
-      width: 40px;
-      bottom: 0;
-      left: 0;
-      border-top-right-radius: 20px;
-      @media screen and (min-width: 768px) {
-        height: 60px;
-        width: 60px;
-        border-top-right-radius: 30px;
-      }
-      @media screen and (min-width: 960px) {
-        height: 80px;
-        width: 80px;
-        border-top-right-radius: 40px;
-      }
-      @media screen and (min-width: 1200px) {
-        height: 80px;
-        width: 80px;
-        border-top-right-radius: 40px;
-      }
-    }
     .icon-wrap {
       text-align: center;
       width: 50%;
@@ -720,6 +642,65 @@
             }
           }
         }
+      }
+    }
+  }
+}
+.app-footer {
+  background: white;
+  color: black;
+  padding-left: 40px;
+  display: flex;
+  justify-content: space-between;
+  @media screen and (min-width: 768px) {
+    padding-left: 80px;
+  }
+  @media screen and (min-width: 960px) {
+    padding-left: 120px;
+  }
+  @media screen and (min-width: 1200px) {
+    padding-left: 160px;
+  }
+  .contact-details {
+    address {
+      font-style: normal;
+      .company-name {
+        font-weight: normal;
+      }
+      p {
+        font-family: sans-serif;
+        line-height: 1.5;
+      }
+      .email {
+        display: block;
+        font-family: sans-serif;
+        line-height: 1.5;
+      }
+      .phone {
+        display: block;
+        font-family: sans-serif;
+        line-height: 1.5;
+      }
+    }
+  }
+  .section-header {
+    .section-title {
+      background: black;
+      color: white;
+      margin: 0;
+      padding: 15px 40px;
+      display: inline-block;
+      font-size: 18px;
+      font-weight: normal;
+      letter-spacing: 2px;
+      @media screen and (min-width: 768px) {
+        font-size: 20px;
+      }
+      @media screen and (min-width: 960px) {
+        font-size: 22px;
+      }
+      @media screen and (min-width: 1200px) {
+        font-size: 24px;
       }
     }
   }

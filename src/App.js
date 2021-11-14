@@ -11,7 +11,6 @@ import ScrollWrapper from './components/ScrollWrapper';
 import './App.scss';
 
 function App() {
-  const [inView, setInView] = useState(false);
   const [whoweareHeaderInView, setWhoweareHeaderInView] = useState(false);
   const [whoweareEntryInView, setWhoweareEntryInView] = useState(false);
   const [ourservicesHeaderInView, setOurservicesHeaderInView] = useState(false);
@@ -43,7 +42,7 @@ function App() {
         </blockquote>
       </section>
 
-      <ScrollWrapper inView={inView}>
+      <ScrollWrapper inView={true}>
         <section id="who-we-are" className="who-we-are">
           <header className="section-header">
             <InView onChange={setWhoweareHeaderInView}>
@@ -83,7 +82,7 @@ function App() {
 
       <div className="clients-loved-these">
         <ol className="love-list">
-          <ScrollWrapper inView={inView}>
+          <ScrollWrapper inView={true}>
             <InView onChange={setLoveitemOneInView}>
               <li className={`list-item ${loveitemOneInView ? 'animate__animated animate__bounceInRight' : ''}`}>
                 <h3>Workshop on calming your busy mind</h3>
@@ -116,7 +115,7 @@ function App() {
       </div>
 
       <section id="founders" className="founders">
-        <ScrollWrapper inView={inView}>
+        <ScrollWrapper inView={true}>
           <div className="image-grid">
             <div className="image-wrapper">
               <InView onChange={setKrishnenduInView}>
@@ -152,7 +151,7 @@ function App() {
       </section>
 
       <section id="what-we-live-by" className="what-we-live-by">
-        <ScrollWrapper inView={inView}>
+        <ScrollWrapper inView={true}>
           <header className="section-header">
             <InView onChange={setWhatwelivebyHeaderInView}>
               <h2 className="section-title">

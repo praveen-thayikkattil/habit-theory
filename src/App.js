@@ -1,13 +1,32 @@
+import { useState } from 'react';
 import TypeWriterEffect from 'react-typewriter-effect';
+import { InView } from 'react-intersection-observer';
 import Header from './components/Header';
 import whoWeAreIcon from './assets/images/who-we-are-icon.png';
 import ourServicesIcon from './assets/images/our-services-icon.png';
 import KrishnenduImage from './assets/images/founder-krishnendu.png';
 import ArunImage from './assets/images/founder-arun.png';
 import KiranImage from './assets/images/founder-kiran.png';
+import ScrollWrapper from './components/ScrollWrapper';
 import './App.scss';
 
 function App() {
+  const [inView, setInView] = useState(false);
+  const [whoweareHeaderInView, setWhoweareHeaderInView] = useState(false);
+  const [whoweareEntryInView, setWhoweareEntryInView] = useState(false);
+  const [ourservicesHeaderInView, setOurservicesHeaderInView] = useState(false);
+  const [ourservicesEntryInView, setOurservicesEntryInView] = useState(false);
+  const [loveitemOneInView, setLoveitemOneInView] = useState(false);
+  const [loveitemTwoInView, setLoveitemTwoInView] = useState(false);
+  const [loveitemThreeInView, setLoveitemThreeInView] = useState(false);
+  const [loveitemFourInView, setLoveitemFourInView] = useState(false);
+  const [krishnenduInView, setKrishnenduInView] = useState(false);
+  const [arunInView, setArunInView] = useState(false);
+  const [kiranInView, setKiranInView] = useState(false);
+  const [foundersHeaderInView, setFoundersHeaderInView] = useState(false);
+  const [foundersEntryInView, setFoundersEntryInView] = useState(false);
+  const [whatwelivebyHeaderInView, setWhatwelivebyHeaderInView] = useState(false);
+  const [curiosityInView, setCuriosityInView] = useState(false);
   return (
     <div className="App">
       <Header />
@@ -24,115 +43,167 @@ function App() {
         </blockquote>
       </section>
 
-      <section id="who-we-are" className="who-we-are">
-        <header className="section-header">
-          <figure className="section-icon who-we-are-icon">
-            <img src={whoWeAreIcon} alt="Who we are" />
-          </figure>
-          
-          <h2 className="section-title">Who we are</h2>
-        </header>
+      <ScrollWrapper inView={inView}>
+        <section id="who-we-are" className="who-we-are">
+          <header className="section-header">
+            <InView onChange={setWhoweareHeaderInView}>
+              <figure className={`section-icon who-we-are-icon ${whoweareHeaderInView ? 'animate__animated animate__bounceInLeft' : ''}`}>
+                <img src={whoWeAreIcon} alt="Who we are" />
+              </figure>
+            
+              <h2 className={`section-title ${whoweareHeaderInView ? 'animate__animated animate__bounceInLeft' : ''}`}>Who we are</h2>
+            </InView>
+          </header>
 
-        <div className="entry">
-          <p>We are educators who use science and stories to help people find meaning in the workplace. Our team is on the constant lookout for the world's finest research on productivity, efficiency, stress, self-control, learning and leadership. We curate our research from some of the most remarkable institutions in the world and use those insight to systematically solve problems in the workplace and help organisations and people relate to their work expressively.</p>
-        </div>
-      </section>
+          <div className="entry">
+            <InView onChange={setWhoweareEntryInView}>
+              <p className={`${whoweareEntryInView ? 'animate__animated animate__bounceInRight' : ''}`}>We are educators who use science and stories to help people find meaning in the workplace. Our team is on the constant lookout for the world's finest research on productivity, efficiency, stress, self-control, learning and leadership. We curate our research from some of the most remarkable institutions in the world and use those insight to systematically solve problems in the workplace and help organisations and people relate to their work expressively.</p>
+            </InView>
+          </div>
+        </section>
 
-      <section id="our-services" className="our-services">
-        <header className="section-header">
-          <figure className="section-icon our-services-icon">
-            <img src={ourServicesIcon} alt="Our services" />
-          </figure>
+        <section id="our-services" className="our-services">
+          <header className="section-header">
+            <InView onChange={setOurservicesHeaderInView}>
+              <figure className={`section-icon our-services-icon ${ourservicesHeaderInView ? 'animate__animated animate__bounceInRight' : ''}`}>
+                <img src={ourServicesIcon} alt="Our services" />
+              </figure>
 
-          <h2 className="section-title">Our services</h2>
-        </header>
+              <h2 className={`section-title ${ourservicesHeaderInView ? 'animate__animated animate__bounceInRight' : ''}`}>Our services</h2>
+            </InView>
+          </header>
 
-        <div className="entry">
-          <p>We create training programs based on the specific problems that our cients need to solve and create a customized training plan based entirely on scientific evidence. Powerful stories and humor are our way of helping people acquire new skills, knowledge and attitudes. The following are some of our training programs that clients loved the most.</p>
-        </div>
-      </section>
+          <div className="entry">
+            <InView onChange={setOurservicesEntryInView}>
+              <p className={`${ourservicesEntryInView ? 'animate__animated animate__bounceInLeft' : ''}`}>We create training programs based on the specific problems that our cients need to solve and create a customized training plan based entirely on scientific evidence. Powerful stories and humor are our way of helping people acquire new skills, knowledge and attitudes. The following are some of our training programs that clients loved the most.</p>
+            </InView>
+          </div>
+        </section>
+      </ScrollWrapper>
 
       <div className="clients-loved-these">
         <ol className="love-list">
-          <li className="list-item">
-            <h3>Workshop on calming your busy mind</h3>
-            <p>We use the science of stress, exercise, meditiation and diet to help you clear your mind and be more productive.</p>
-          </li>
+          <ScrollWrapper inView={inView}>
+            <InView onChange={setLoveitemOneInView}>
+              <li className={`list-item ${loveitemOneInView ? 'animate__animated animate__bounceInRight' : ''}`}>
+                <h3>Workshop on calming your busy mind</h3>
+                <p>We use the science of stress, exercise, meditiation and diet to help you clear your mind and be more productive.</p>
+              </li>
+            </InView>
 
-          <li className="list-item">
-            <h3>Workshop on becoming a productivity ninja</h3>
-            <p>We use the science of willpower and procrastination to help you become super-productive.</p>
-          </li>
+            <InView onChange={setLoveitemTwoInView}>
+              <li className={`list-item ${loveitemTwoInView ? 'animate__animated animate__bounceInLeft' : ''}`}>
+                <h3>Workshop on becoming a productivity ninja</h3>
+                <p>We use the science of willpower and procrastination to help you become super-productive.</p>
+              </li>
+            </InView>
 
-          <li className="list-item">
-            <h3>Workshop on becoming a master learner</h3>
-            <p>We use the science of focused and diffuse modes to help you learn anything faster.</p>
-          </li>
+            <InView onChange={setLoveitemThreeInView}>
+              <li className={`list-item ${loveitemThreeInView ? 'animate__animated animate__bounceInRight' : ''}`}>
+                <h3>Workshop on becoming a master learner</h3>
+                <p>We use the science of focused and diffuse modes to help you learn anything faster.</p>
+              </li>
+            </InView>
 
-          <li className="list-item">
-            <h3>Workshop on the checklist manifesto</h3>
-            <p>We use the power of checklist to train you on the meticulous execution of different processes in the workplace.</p>
-          </li>
+            <InView onChange={setLoveitemFourInView}>
+              <li className={`list-item ${loveitemFourInView ? 'animate__animated animate__bounceInLeft' : ''}`}>
+                <h3>Workshop on the checklist manifesto</h3>
+                <p>We use the power of checklist to train you on the meticulous execution of different processes in the workplace.</p>
+              </li>
+            </InView>
+          </ScrollWrapper>
         </ol>
       </div>
 
       <section id="founders" className="founders">
-        <div className="image-grid">
-          <div className="image-wrapper">
-            <img src={KrishnenduImage} alt="Krishnendu" />
-          </div>
-          
-          <div className="image-wrapper">
-            <img src={ArunImage} alt="Arun" />
+        <ScrollWrapper inView={inView}>
+          <div className="image-grid">
+            <div className="image-wrapper">
+              <InView onChange={setKrishnenduInView}>
+                <img className={`${krishnenduInView ? 'animate__animated animate__fadeInLeftBig' : ''}`} src={KrishnenduImage} alt="Krishnendu" />
+              </InView>
+            </div>
+
+            <div className="image-wrapper">
+              <InView onChange={setArunInView}>
+                <img className={`${arunInView ? 'animate__animated animate__fadeInUpBig' : ''}`} src={ArunImage} alt="Arun" />
+              </InView>
+            </div>
+
+            <div className="image-wrapper">
+              <InView onChange={setKiranInView}>
+                <img className={`${kiranInView ? 'animate__animated animate__fadeInRightBig' : ''}`} src={KiranImage} alt="Kiran" />
+              </InView>
+            </div>
           </div>
 
-          <div className="image-wrapper">
-            <img src={KiranImage} alt="Kiran" />
+          <header className="section-header">
+            <InView onChange={setFoundersHeaderInView}>
+              <h2 className={`section-title ${foundersHeaderInView ? 'animate__animated animate__bounceInLeft' : ''}`}>Founders</h2>
+            </InView>
+          </header>
+
+          <div className="entry">
+            <InView onChange={setFoundersEntryInView}>
+              <p className={`section-title ${foundersEntryInView ? 'animate__animated animate__fadeIn' : ''}`}>Krishnendu, Arun and Kiran came together to found Habit Theory on the belief that science and stories are two of the most powerful ways to inspire anyone. They have diverse experience in areas ranging from personal coaching to organizational problem solving.</p>
+            </InView>
           </div>
-        </div>
-
-        <header className="section-header">          
-          <h2 className="section-title">Founders</h2>
-        </header>
-
-        <div className="entry">
-          <p>Krishnendu, Arun and Kiran came together to found Habit Theory on the belief that science and stories are two of the most powerful ways to inspire anyone. They have diverse experience in areas ranging from personal coaching to organizational problem solving.</p>
-        </div>
+        </ScrollWrapper>
       </section>
 
       <section id="what-we-live-by" className="what-we-live-by">
-        <header className="section-header">          
-          <h2 className="section-title">What we live by</h2>
-        </header>
+        <ScrollWrapper inView={inView}>
+          <header className="section-header">
+            <InView onChange={setWhatwelivebyHeaderInView}>
+              <h2 className="section-title">
+                <div className={`${whatwelivebyHeaderInView ? 'animate__animated animate__bounceInRight' : ''}`}>What we live by</div></h2>
+            </InView>
+          </header>
 
-        <div className="icons-list-wrapper">
-          <ul className="icons-list">
-            <li className="list-item">
-              <img src="https://loremflickr.com/100/100" alt="Curiosity" />
-              <strong>Curiosity</strong>
-            </li>
+          <div className="icons-list-wrapper">
+            <ul className="icons-list">
+              <li className="list-item">
+                <InView onChange={setCuriosityInView}>
+                  <img className={`${curiosityInView ? 'animate__animated animate__flipInY' : ''}`} src="https://loremflickr.com/100/100" alt="Curiosity" />
+                </InView>
 
-            <li className="list-item">
-              <img src="https://loremflickr.com/100/100" alt="Learning" />
-              <strong>Learning</strong>
-            </li>
+                <strong>Curiosity</strong>
+              </li>
 
-            <li className="list-item">
-              <img src="https://loremflickr.com/100/100" alt="Humour" />
-              <strong>Humour</strong>
-            </li>
+              <li className="list-item">
+                <InView onChange={setCuriosityInView}>
+                  <img className={`${curiosityInView ? 'animate__animated animate__flipInY' : ''}`} src="https://loremflickr.com/100/100" alt="Curiosity" />
+                </InView>
 
-            <li className="list-item">
-              <img src="https://loremflickr.com/100/100" alt="Science" />
-              <strong>Science</strong>
-            </li>
+                <strong>Learning</strong>
+              </li>
 
-            <li className="list-item">
-              <img src="https://loremflickr.com/100/100" alt="Stories" />
-              <strong>Stories</strong>
-            </li>
-          </ul>
-        </div>
+              <li className="list-item">
+                <InView onChange={setCuriosityInView}>
+                  <img className={`${curiosityInView ? 'animate__animated animate__flipInY' : ''}`} src="https://loremflickr.com/100/100" alt="Curiosity" />
+                </InView>
+
+                <strong>Humour</strong>
+              </li>
+
+              <li className="list-item">
+                <InView onChange={setCuriosityInView}>
+                  <img className={`${curiosityInView ? 'animate__animated animate__flipInY' : ''}`} src="https://loremflickr.com/100/100" alt="Curiosity" />
+                </InView>
+
+                <strong>Science</strong>
+              </li>
+
+              <li className="list-item">
+                <InView onChange={setCuriosityInView}>
+                  <img className={`${curiosityInView ? 'animate__animated animate__flipInY' : ''}`} src="https://loremflickr.com/100/100" alt="Curiosity" />
+                </InView>
+
+                <strong>Stories</strong>
+              </li>
+            </ul>
+          </div>
+        </ScrollWrapper>
       </section>
 
       <section id="why-choose-us" className="why-choose-us">

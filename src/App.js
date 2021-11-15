@@ -7,6 +7,7 @@ import ourServicesIcon from './assets/images/our-services-icon.png';
 import KrishnenduImage from './assets/images/founder-krishnendu.png';
 import ArunImage from './assets/images/founder-arun.png';
 import KiranImage from './assets/images/founder-kiran.png';
+import WhyChooseUsIcon from './assets/images/why-choose-us-icon.png';
 import ScrollWrapper from './components/ScrollWrapper';
 import './App.scss';
 
@@ -212,7 +213,7 @@ function App() {
 
         <div className="section-content">
           <div className="icon-wrap">
-            <img src="https://loremflickr.com/200/200" alt="Why choose us?" />
+            <img src={WhyChooseUsIcon} alt="Why choose us?" />
           </div>
 
           <div className="details-wrap">

@@ -601,18 +601,22 @@
     padding: 40px;
     position: relative;
     .icon-wrap {
-      text-align: center;
+      text-align: right;
       width: 50%;
       img {
-        max-width: 64px;
+        max-width: 100px;
+        margin-right: 40px;
         @media screen and (min-width: 768px) {
-          max-width: 96px;
+          max-width: 128px;
+          margin-right: 80px;
         }
         @media screen and (min-width: 960px) {
-          max-width: 128px;
+          max-width: 160px;
+          margin-right: 120px;
         }
         @media screen and (min-width: 1200px) {
-          max-width: 240px;
+          max-width: 200px;
+          margin-right: 160px;
         }
       }
     }

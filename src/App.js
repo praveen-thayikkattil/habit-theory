@@ -7,6 +7,11 @@ import ourServicesIcon from './assets/images/our-services-icon.png';
 import KrishnenduImage from './assets/images/founder-krishnendu.png';
 import ArunImage from './assets/images/founder-arun.png';
 import KiranImage from './assets/images/founder-kiran.png';
+import CuriosityIcon from './assets/images/curiosity-icon.png';
+import LearningIcon from './assets/images/learning-icon.png';
+import HumourIcon from './assets/images/humour-icon.png';
+import ScienceIcon from './assets/images/science-icon.png';
+import StoriesIcon from './assets/images/stories-icon.png';
 import WhyChooseUsIcon from './assets/images/why-choose-us-icon.png';
 import ScrollWrapper from './components/ScrollWrapper';
 import './App.scss';
@@ -164,7 +169,7 @@ function App() {
             <ul className="icons-list">
               <li className="list-item">
                 <InView onChange={setCuriosityInView}>
-                  <img className={`${curiosityInView ? 'animate__animated animate__flipInY' : ''}`} src="https://loremflickr.com/100/100" alt="Curiosity" />
+                  <img className={`${curiosityInView ? 'animate__animated animate__flipInY' : ''}`} src={CuriosityIcon} alt="Curiosity" />
                 </InView>
 
                 <strong>Curiosity</strong>
@@ -172,7 +177,7 @@ function App() {
 
               <li className="list-item">
                 <InView onChange={setCuriosityInView}>
-                  <img className={`${curiosityInView ? 'animate__animated animate__flipInY' : ''}`} src="https://loremflickr.com/100/100" alt="Curiosity" />
+                  <img className={`${curiosityInView ? 'animate__animated animate__flipInY' : ''}`} src={LearningIcon} alt="Learning" />
                 </InView>
 
                 <strong>Learning</strong>
@@ -180,7 +185,7 @@ function App() {
 
               <li className="list-item">
                 <InView onChange={setCuriosityInView}>
-                  <img className={`${curiosityInView ? 'animate__animated animate__flipInY' : ''}`} src="https://loremflickr.com/100/100" alt="Curiosity" />
+                  <img className={`${curiosityInView ? 'animate__animated animate__flipInY' : ''}`} src={HumourIcon} alt="Humor" />
                 </InView>
 
                 <strong>Humour</strong>
@@ -188,7 +193,7 @@ function App() {
 
               <li className="list-item">
                 <InView onChange={setCuriosityInView}>
-                  <img className={`${curiosityInView ? 'animate__animated animate__flipInY' : ''}`} src="https://loremflickr.com/100/100" alt="Curiosity" />
+                  <img className={`${curiosityInView ? 'animate__animated animate__flipInY' : ''}`} src={ScienceIcon} alt="Science" />
                 </InView>
 
                 <strong>Science</strong>
@@ -196,7 +201,7 @@ function App() {
 
               <li className="list-item">
                 <InView onChange={setCuriosityInView}>
-                  <img className={`${curiosityInView ? 'animate__animated animate__flipInY' : ''}`} src="https://loremflickr.com/100/100" alt="Curiosity" />
+                  <img className={`${curiosityInView ? 'animate__animated animate__flipInY' : ''}`} src={StoriesIcon} alt="Stories" />
                 </InView>
 
                 <strong>Stories</strong>

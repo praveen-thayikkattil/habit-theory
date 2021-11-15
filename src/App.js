@@ -4,6 +4,10 @@ import { InView } from 'react-intersection-observer';
 import Header from './components/Header';
 import whoWeAreIcon from './assets/images/who-we-are-icon.png';
 import ourServicesIcon from './assets/images/our-services-icon.png';
+import CalmIcon from './assets/images/lovelist-calm-icon.png';
+import NinjaIcon from './assets/images/lovelist-ninja-icon.png';
+import LearnerIcon from './assets/images/lovelist-learner-icon.png';
+import ChecklistIcon from './assets/images/lovelist-checklist-icon.png';
 import KrishnenduImage from './assets/images/founder-krishnendu.png';
 import ArunImage from './assets/images/founder-arun.png';
 import KiranImage from './assets/images/founder-kiran.png';
@@ -87,37 +91,77 @@ function App() {
       </ScrollWrapper>
 
       <div className="clients-loved-these">
-        <ol className="love-list">
+        <ul className="love-list">
           <ScrollWrapper inView={true}>
             <InView onChange={setLoveitemOneInView}>
               <li className={`list-item ${loveitemOneInView ? 'animate__animated animate__bounceInRight animate__slow' : ''}`}>
-                <h3>Workshop on calming your busy mind</h3>
-                <p>We use the science of stress, exercise, meditiation and diet to help you clear your mind and be more productive.</p>
+                <div className="icon-wrap">
+                  <img src={CalmIcon} alt="" />
+                </div>
+
+                <div className="content-wrap">
+                  <div className="item-number"><strong>1.</strong></div>
+
+                  <div className="item-details">
+                    <h3>Workshop on calming your busy mind</h3>
+                    <p>We use the science of stress, exercise, meditiation and diet to help you clear your mind and be more productive.</p>
+                  </div>
+                </div>
               </li>
             </InView>
 
             <InView onChange={setLoveitemTwoInView}>
               <li className={`list-item ${loveitemTwoInView ? 'animate__animated animate__bounceInLeft animate__slow' : ''}`}>
-                <h3>Workshop on becoming a productivity ninja</h3>
-                <p>We use the science of willpower and procrastination to help you become super-productive.</p>
+                <div className="icon-wrap">
+                  <img src={NinjaIcon} alt="" />
+                </div>
+
+                <div className="content-wrap">
+                  <div className="item-number"><strong>2.</strong></div>
+
+                  <div className="item-details">
+                    <h3>Workshop on becoming a productivity ninja</h3>
+                    <p>We use the science of willpower and procrastination to help you become super-productive.</p>
+                  </div>
+                </div>
               </li>
             </InView>
 
             <InView onChange={setLoveitemThreeInView}>
               <li className={`list-item ${loveitemThreeInView ? 'animate__animated animate__bounceInRight animate__slow' : ''}`}>
-                <h3>Workshop on becoming a master learner</h3>
-                <p>We use the science of focused and diffuse modes to help you learn anything faster.</p>
+                <div className="icon-wrap">
+                  <img src={LearnerIcon} alt="" />
+                </div>
+
+                <div className="content-wrap">
+                  <div className="item-number"><strong>3.</strong></div>
+
+                  <div className="item-details">
+                    <h3>Workshop on becoming a master learner</h3>
+                    <p>We use the science of focused and diffuse modes to help you learn anything faster.</p>
+                  </div>
+                </div>
               </li>
             </InView>
 
             <InView onChange={setLoveitemFourInView}>
               <li className={`list-item ${loveitemFourInView ? 'animate__animated animate__bounceInLeft animate__slow' : ''}`}>
-                <h3>Workshop on the checklist manifesto</h3>
-                <p>We use the power of checklist to train you on the meticulous execution of different processes in the workplace.</p>
+                <div className="icon-wrap">
+                  <img src={ChecklistIcon} alt="" />
+                </div>
+
+                <div className="content-wrap">
+                  <div className="item-number"><strong>4.</strong></div>
+
+                  <div className="item-details">
+                    <h3>Workshop on the checklist manifesto</h3>
+                    <p>We use the power of checklist to train you on the meticulous execution of different processes in the workplace.</p>
+                  </div>
+                </div>
               </li>
             </InView>
           </ScrollWrapper>
-        </ol>
+        </ul>
       </div>
 
       <section id="founders" className="founders">

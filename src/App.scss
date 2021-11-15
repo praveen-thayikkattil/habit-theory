@@ -40,43 +40,6 @@ nav {
   }
 }
 
-.main-nav {
-  background: white;
-  .menu {
-    list-style: none;
-    margin: 0;
-    padding: 10px 0;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    .menu-item {
-      margin: 0;
-      padding: 5px 0;
-      width: 200px;
-      a {
-        display: block;
-        color: black;
-        margin: 0;
-        padding: 10px 0;
-        text-decoration: none;
-        cursor: pointer;
-        text-align: center;
-        transition: all 0.3s ease-out;
-        text-transform: uppercase;
-        font-weight: bold;
-        border-top-right-radius: 20px;
-        border-bottom-left-radius: 20px;
-        &:hover {
-          background: black;
-          color: white;
-        }
-      }
-    }
-  }
-}
-
-
-
 .app-header {
   display: flex;
   justify-content: space-between;
@@ -372,6 +335,9 @@ nav {
     .list-item {
       width: 50%;
       font-size: 27px;
+      display: flex;
+      flex-direction: row;
+      flex-wrap: nowrap;
       @media screen and (min-width: 768px) {
         font-size: 30px;
       }
@@ -381,44 +347,49 @@ nav {
       @media screen and (min-width: 1200px) {
         font-size: 48px;
       }
-      h3 {
-        text-align: left;
-        font-size: 16px;
-        margin: 0;
-        padding: 0;
-        position: relative;
-        top: -7px;
-        font-weight: normal;
-        @media screen and (min-width: 768px) {
-          font-size: 18px;
-          top: -10px;
+      .icon-wrap {
+        img {
+          max-width: 64px;
+          height: auto;
         }
-        @media screen and (min-width: 960px) {
-          font-size: 24px;
-          top: -16px;
+      }
+      .content-wrap {
+        display: flex;
+        .item-number {
+          margin: 0 10px;
         }
-        @media screen and (min-width: 1200px) {
-          font-size: 27px;
+        .item-details {
+          h3 {
+            text-align: left;
+            font-size: 16px;
+            margin: 0;
+            padding: 0;
+            font-weight: normal;
+            @media screen and (min-width: 768px) {
+              font-size: 18px;
+            }
+            @media screen and (min-width: 960px) {
+              font-size: 24px;
+            }
+            @media screen and (min-width: 1200px) {
+              font-size: 27px;
+            }
+          }
         }
       }
       p {
         text-align: left;
         font-size: 12px;
         font-weight: normal;
-        position: relative;
-        top: -16px;
         font-family: sans-serif;
         @media screen and (min-width: 768px) {
           font-size: 13px;
-          top: -18px;
         }
         @media screen and (min-width: 960px) {
           font-size: 14px;
-          top: -20px;
         }
         @media screen and (min-width: 1200px) {
           font-size: 16px;
-          top: -24px;
         }
       }
     }

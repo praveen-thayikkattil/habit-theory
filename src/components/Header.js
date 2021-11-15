@@ -35,9 +35,9 @@ const Header = () => {
                 </ul>
             </nav>
             <header className="app-header">
-                <h1 className="app-logo" title="Habit Theory">Habit Theory</h1>
+                <h1 className="app-logo animate__animated animate__fadeIn animate__delay-5s" title="Habit Theory">Habit Theory</h1>
 
-                <button className="nav-open" onClick={handleOnClick}>
+                <button className="nav-open animate__animated animate__fadeIn animate__delay-5s" onClick={handleOnClick}>
                     <FaBars />
                 </button>
             </header>

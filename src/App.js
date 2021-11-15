@@ -52,11 +52,11 @@ function App() {
         <section id="who-we-are" className="who-we-are">
           <header className="section-header">
             <InView onChange={setWhoweareHeaderInView}>
-              <figure className={`section-icon who-we-are-icon ${whoweareHeaderInView ? 'animate__animated animate__bounceInLeft' : ''}`}>
+              <figure className={`section-icon who-we-are-icon ${whoweareHeaderInView ? 'animate__animated animate__slideInLeft' : ''}`}>
                 <img src={whoWeAreIcon} alt="Who we are" />
               </figure>
             
-              <h2 className={`section-title ${whoweareHeaderInView ? 'animate__animated animate__bounceInLeft' : ''}`}>Who we are</h2>
+              <h2 className={`section-title ${whoweareHeaderInView ? 'animate__animated animate__slideInLeft' : ''}`}>Who we are</h2>
             </InView>
           </header>
 
@@ -70,11 +70,11 @@ function App() {
         <section id="our-services" className="our-services">
           <header className="section-header">
             <InView onChange={setOurservicesHeaderInView}>
-              <figure className={`section-icon our-services-icon ${ourservicesHeaderInView ? 'animate__animated animate__bounceInRight' : ''}`}>
+              <figure className={`section-icon our-services-icon ${ourservicesHeaderInView ? 'animate__animated animate__slideInRight' : ''}`}>
                 <img src={ourServicesIcon} alt="Our services" />
               </figure>
 
-              <h2 className={`section-title ${ourservicesHeaderInView ? 'animate__animated animate__bounceInRight' : ''}`}>Our services</h2>
+              <h2 className={`section-title ${ourservicesHeaderInView ? 'animate__animated animate__slideInRight' : ''}`}>Our services</h2>
             </InView>
           </header>
 
@@ -90,28 +90,28 @@ function App() {
         <ol className="love-list">
           <ScrollWrapper inView={true}>
             <InView onChange={setLoveitemOneInView}>
-              <li className={`list-item ${loveitemOneInView ? 'animate__animated animate__bounceInRight' : ''}`}>
+              <li className={`list-item ${loveitemOneInView ? 'animate__animated animate__bounceInRight animate__slow' : ''}`}>
                 <h3>Workshop on calming your busy mind</h3>
                 <p>We use the science of stress, exercise, meditiation and diet to help you clear your mind and be more productive.</p>
               </li>
             </InView>
 
             <InView onChange={setLoveitemTwoInView}>
-              <li className={`list-item ${loveitemTwoInView ? 'animate__animated animate__bounceInLeft' : ''}`}>
+              <li className={`list-item ${loveitemTwoInView ? 'animate__animated animate__bounceInLeft animate__slow' : ''}`}>
                 <h3>Workshop on becoming a productivity ninja</h3>
                 <p>We use the science of willpower and procrastination to help you become super-productive.</p>
               </li>
             </InView>
 
             <InView onChange={setLoveitemThreeInView}>
-              <li className={`list-item ${loveitemThreeInView ? 'animate__animated animate__bounceInRight' : ''}`}>
+              <li className={`list-item ${loveitemThreeInView ? 'animate__animated animate__bounceInRight animate__slow' : ''}`}>
                 <h3>Workshop on becoming a master learner</h3>
                 <p>We use the science of focused and diffuse modes to help you learn anything faster.</p>
               </li>
             </InView>
 
             <InView onChange={setLoveitemFourInView}>
-              <li className={`list-item ${loveitemFourInView ? 'animate__animated animate__bounceInLeft' : ''}`}>
+              <li className={`list-item ${loveitemFourInView ? 'animate__animated animate__bounceInLeft animate__slow' : ''}`}>
                 <h3>Workshop on the checklist manifesto</h3>
                 <p>We use the power of checklist to train you on the meticulous execution of different processes in the workplace.</p>
               </li>
@@ -125,19 +125,19 @@ function App() {
           <div className="image-grid">
             <div className="image-wrapper">
               <InView onChange={setKrishnenduInView}>
-                <img className={`${krishnenduInView ? 'animate__animated animate__fadeInLeftBig' : ''}`} src={KrishnenduImage} alt="Krishnendu" />
+                <img className={`${krishnenduInView ? 'animate__animated animate__fadeInLeft' : ''}`} src={KrishnenduImage} alt="Krishnendu" />
               </InView>
             </div>
 
             <div className="image-wrapper">
               <InView onChange={setArunInView}>
-                <img className={`${arunInView ? 'animate__animated animate__fadeInUpBig' : ''}`} src={ArunImage} alt="Arun" />
+                <img className={`${arunInView ? 'animate__animated animate__fadeInUp' : ''}`} src={ArunImage} alt="Arun" />
               </InView>
             </div>
 
             <div className="image-wrapper">
               <InView onChange={setKiranInView}>
-                <img className={`${kiranInView ? 'animate__animated animate__fadeInRightBig' : ''}`} src={KiranImage} alt="Kiran" />
+                <img className={`${kiranInView ? 'animate__animated animate__fadeInRight' : ''}`} src={KiranImage} alt="Kiran" />
               </InView>
             </div>
           </div>
@@ -169,7 +169,7 @@ function App() {
             <ul className="icons-list">
               <li className="list-item">
                 <InView onChange={setCuriosityInView}>
-                  <img className={`${curiosityInView ? 'animate__animated animate__flipInY' : ''}`} src={CuriosityIcon} alt="Curiosity" />
+                  <img className={`${curiosityInView ? 'animate__animated animate__flipInY animate__slow' : ''}`} src={CuriosityIcon} alt="Curiosity" />
                 </InView>
 
                 <strong>Curiosity</strong>
@@ -177,7 +177,7 @@ function App() {
 
               <li className="list-item">
                 <InView onChange={setCuriosityInView}>
-                  <img className={`${curiosityInView ? 'animate__animated animate__flipInY' : ''}`} src={LearningIcon} alt="Learning" />
+                  <img className={`${curiosityInView ? 'animate__animated animate__flipInY animate__slow' : ''}`} src={LearningIcon} alt="Learning" />
                 </InView>
 
                 <strong>Learning</strong>
@@ -185,7 +185,7 @@ function App() {
 
               <li className="list-item">
                 <InView onChange={setCuriosityInView}>
-                  <img className={`${curiosityInView ? 'animate__animated animate__flipInY' : ''}`} src={HumourIcon} alt="Humor" />
+                  <img className={`${curiosityInView ? 'animate__animated animate__flipInY animate__slow' : ''}`} src={HumourIcon} alt="Humor" />
                 </InView>
 
                 <strong>Humour</strong>
@@ -193,7 +193,7 @@ function App() {
 
               <li className="list-item">
                 <InView onChange={setCuriosityInView}>
-                  <img className={`${curiosityInView ? 'animate__animated animate__flipInY' : ''}`} src={ScienceIcon} alt="Science" />
+                  <img className={`${curiosityInView ? 'animate__animated animate__flipInY animate__slow' : ''}`} src={ScienceIcon} alt="Science" />
                 </InView>
 
                 <strong>Science</strong>
@@ -201,7 +201,7 @@ function App() {
 
               <li className="list-item">
                 <InView onChange={setCuriosityInView}>
-                  <img className={`${curiosityInView ? 'animate__animated animate__flipInY' : ''}`} src={StoriesIcon} alt="Stories" />
+                  <img className={`${curiosityInView ? 'animate__animated animate__flipInY animate__slow' : ''}`} src={StoriesIcon} alt="Stories" />
                 </InView>
 
                 <strong>Stories</strong>

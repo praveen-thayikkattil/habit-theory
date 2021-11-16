@@ -61,6 +61,7 @@ function App() {
                 cursorColor="white"
                 text='"We use insights from neuroscience, psychology and behavioural economics to help our clients build productive microhabits."'
                 typeSpeed={70}
+                hideCursorAfterText={true}
             />
           </blockquote>
         }

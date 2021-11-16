@@ -81,7 +81,7 @@ function App() {
 
           <div className="entry">
             <InView onChange={setWhoweareEntryInView}>
-              <p className={`${whoweareEntryInView ? 'animate__animated animate__bounceInRight' : ''}`}>We are educators who use science and stories to help people find meaning in the workplace. Our team is on the constant lookout for the world's finest research on productivity, efficiency, stress, self-control, learning and leadership. We curate our research from some of the most remarkable institutions in the world and use those insight to systematically solve problems in the workplace and help organisations and people relate to their work expressively.</p>
+              <p className={`${whoweareEntryInView ? 'animate__animated animate__bounceInRight' : ''}`}>We are educators who use science and stories to help people find meaning in the workplace. Our team is on the constant lookout for the world's finest research on productivity, efficiency, stress, self-control, learning and leadership. We curate our research from some of the most remarkable institutions in the world and use those insights to systematically solve problems in the workplace and help organisations and people relate to their work expressively.</p>
             </InView>
           </div>
         </section>

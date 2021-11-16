@@ -99,7 +99,7 @@ function App() {
 
           <div className="entry">
             <InView onChange={setOurservicesEntryInView}>
-              <p className={`${ourservicesEntryInView ? 'animate__animated animate__bounceInLeft' : ''}`}>We create training programs based on the specific problems that our cients need to solve and create a customized training plan based entirely on scientific evidence. Powerful stories and humor are our way of helping people acquire new skills, knowledge and attitudes. The following are some of our training programs that clients loved the most.</p>
+              <p className={`${ourservicesEntryInView ? 'animate__animated animate__bounceInLeft' : ''}`}>We create training programs based on the specific problems that our clients need to solve and create a customized training plan based entirely on scientific evidence. Powerful stories and humor are our ways of helping people acquire new skills, knowledge and attitudes. The following are some of our training programs that clients loved the most.</p>
             </InView>
           </div>
         </section>
@@ -247,7 +247,7 @@ function App() {
                   <img className={`${curiosityInView ? 'animate__animated animate__flipInY animate__slow' : ''}`} src={HumourIcon} alt="Humor" />
                 </InView>
 
-                <strong>Humour</strong>
+                <strong>Humor</strong>
               </li>
 
               <li className="list-item">
@@ -289,7 +289,7 @@ function App() {
 
               <li>
                 <h4>Our Vision</h4>
-                <p>A day everyone can find meaning in <strong>the/(their)</strong> workplace.</p>
+                <p>A day everyone can find meaning in <strong>the</strong> workplace.</p>
               </li>
             </ul>
           </div>

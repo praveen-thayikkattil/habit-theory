@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import TypeWriterEffect from 'react-typewriter-effect';
 import { InView } from 'react-intersection-observer';
+import { FaChevronUp } from 'react-icons/fa';
 import Header from './components/Header';
 import whoWeAreIcon from './assets/images/who-we-are-icon.png';
 import ourServicesIcon from './assets/images/our-services-icon.png';
@@ -21,6 +22,7 @@ import ScrollWrapper from './components/ScrollWrapper';
 import './App.scss';
 
 function App() {
+  const [heroInView, setHeroInView] = useState(true);
   const [whoweareHeaderInView, setWhoweareHeaderInView] = useState(false);
   const [whoweareEntryInView, setWhoweareEntryInView] = useState(false);
   const [ourservicesHeaderInView, setOurservicesHeaderInView] = useState(false);
@@ -40,16 +42,29 @@ function App() {
     <div className="App">
       <Header />
 
+      {!heroInView &&
+        <a href="#header" className="scroll-to-top">
+          <FaChevronUp />
+        </a>
+      }
+
+      <ScrollWrapper inView={true}>
+        <InView onChange={setHeroInView} />
+      </ScrollWrapper>
+
       <section className="home-hero">
-        <blockquote>
-          <TypeWriterEffect
-            textStyle={{ fontFamily: 'Fjalla One' }}
-            startDelay={100}
-            cursorColor="white"
-            text='"We use insights from neuroscience, psychology and behavioural economics to help our clients build productive microhabits."'
-            typeSpeed={70}
-          />
-        </blockquote>
+        {heroInView &&
+          <blockquote>
+            <TypeWriterEffect
+                textStyle={{ fontFamily: 'Fjalla One' }}
+                startDelay={0}
+                cursorColor="white"
+                text='"We use insights from neuroscience, psychology and behavioural economics to help our clients build productive microhabits."'
+                typeSpeed={70}
+            />
+          </blockquote>
+        }
+        {!heroInView && <blockquote><p>"We use insights from neuroscience, psychology and behavioural economics to help our clients build productive microhabits."</p></blockquote>}
       </section>
 
       <ScrollWrapper inView={true}>

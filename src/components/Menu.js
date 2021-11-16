@@ -87,19 +87,19 @@ class Menu extends React.Component {
                             </li>
 
                             <li className="menu-item">
-                                <a href="#our-services">our services</a>
+                                <a onClick={this.toggleMenu} href="#our-services">our services</a>
                             </li>
 
                             <li className="menu-item">
-                                <a href="#founders">founders</a>
+                                <a onClick={this.toggleMenu} href="#founders">founders</a>
                             </li>
 
                             <li className="menu-item">
-                                <a href="#what-we-live-by">what we live by</a>
+                                <a onClick={this.toggleMenu} href="#what-we-live-by">what we live by</a>
                             </li>
 
                             <li className="menu-item">
-                                <a href="#why-choose-us">why choose us</a>
+                                <a onClick={this.toggleMenu} href="#why-choose-us">why choose us</a>
                             </li>
                         </ul>
                     </nav>

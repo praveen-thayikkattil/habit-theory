@@ -289,7 +289,7 @@ function App() {
 
               <li>
                 <h4>Our Vision</h4>
-                <p>A day everyone can find meaning in <strong>the</strong> workplace.</p>
+                <p>A day everyone can find meaning in the workplace.</p>
               </li>
             </ul>
           </div>

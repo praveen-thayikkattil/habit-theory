@@ -73,7 +73,7 @@ class Menu extends React.Component {
 
         return (
             <React.Fragment>
-                <div className={`${menuBtn} ${isMenuOpen ? "closer" : null}`} onClick={this.toggleMenu}>
+                <div className={`animate__animated animate__fadeIn animate__delay-5s ${menuBtn} ${isMenuOpen ? "closer" : null}`} onClick={this.toggleMenu}>
                     <div className={`${btnLine} ${isMenuOpen ? "closer" : null}`} />
                     <div className={`${btnLine} ${isMenuOpen ? "closer" : null}`} />
                     <div className={`${btnLine} ${isMenuOpen ? "closer" : null}`} />

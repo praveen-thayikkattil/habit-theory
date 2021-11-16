@@ -64,7 +64,7 @@ function App() {
             />
           </blockquote>
         }
-        {!heroInView && <blockquote><p>"We use insights from neuroscience, psychology and behavioural economics to help our clients build productive microhabits."</p></blockquote>}
+        {!heroInView && <blockquote><p className="animate__animated animate__fadeIn">"We use insights from neuroscience, psychology and behavioural economics to help our clients build productive microhabits."</p></blockquote>}
       </section>
 
       <ScrollWrapper inView={true}>

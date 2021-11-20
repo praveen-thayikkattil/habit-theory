@@ -347,22 +347,29 @@ nav {
     padding: 0 100px;
   }
   .love-list {
+    margin: 0;
+    padding: 0 0 20px 0;
     > div > div {
       &:nth-of-type(odd) .list-item {
-        margin-left: 50%;
+        @media screen and (min-width: 768px) {
+          margin-left: 50%;
+        }
       }
       &:nth-of-type(even) .list-item {
-        margin-right: 50%;
+        @media screen and (min-width: 768px) {
+          margin-right: 50%;
+        }
       }
     }
     .list-item {
-      width: 50%;
+      width: 100%;
       font-size: 27px;
       display: flex;
       flex-direction: row;
       flex-wrap: nowrap;
       @media screen and (min-width: 768px) {
         font-size: 30px;
+        width: 50%;
       }
       @media screen and (min-width: 960px) {
         font-size: 36px;

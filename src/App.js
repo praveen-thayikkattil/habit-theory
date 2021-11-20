@@ -171,7 +171,7 @@ function App() {
 
                   <div className="item-details">
                     <h3>Workshop on the checklist manifesto</h3>
-                    <p>We use the power of checklist to train you on the meticulous execution of different processes in the workplace.</p>
+                    <p>We use the power of checklists to train you on the meticulous execution of different processes in the workplace.</p>
                   </div>
                 </div>
               </li>

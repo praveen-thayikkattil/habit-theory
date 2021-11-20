@@ -351,11 +351,14 @@ nav {
     padding: 0 0 20px 0;
     > div > div {
       &:nth-of-type(odd) .list-item {
+        text-align: left;
         @media screen and (min-width: 768px) {
           margin-left: 50%;
         }
       }
       &:nth-of-type(even) .list-item {
+        text-align: right;
+        flex-direction: row-reverse;
         @media screen and (min-width: 768px) {
           margin-right: 50%;
         }
@@ -367,6 +370,7 @@ nav {
       display: flex;
       flex-direction: row;
       flex-wrap: nowrap;
+      margin-bottom: 10px;
       @media screen and (min-width: 768px) {
         font-size: 30px;
         width: 50%;
@@ -383,14 +387,14 @@ nav {
           height: auto;
         }
       }
+      .item-number {
+        margin: 0 10px;
+      }
       .content-wrap {
         display: flex;
-        .item-number {
-          margin: 0 10px;
-        }
         .item-details {
           h3 {
-            text-align: left;
+            // text-align: left;
             font-size: 16px;
             margin: 0;
             padding: 0;
@@ -408,7 +412,7 @@ nav {
         }
       }
       p {
-        text-align: left;
+        // text-align: left;
         font-size: 12px;
         font-weight: normal;
         font-family: sans-serif;

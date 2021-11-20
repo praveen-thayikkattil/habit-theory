@@ -115,9 +115,9 @@ function App() {
                   <img src={CalmIcon} alt="" />
                 </div>
 
-                <div className="content-wrap">
-                  <div className="item-number"><strong>1.</strong></div>
+                <div className="item-number"><strong>1.</strong></div>
 
+                <div className="content-wrap">
                   <div className="item-details">
                     <h3>Workshop on calming your busy mind</h3>
                     <p>We use the science of stress, exercise, meditiation and diet to help you clear your mind and be more productive.</p>
@@ -132,9 +132,9 @@ function App() {
                   <img src={NinjaIcon} alt="" />
                 </div>
 
-                <div className="content-wrap">
-                  <div className="item-number"><strong>2.</strong></div>
+                <div className="item-number"><strong>2.</strong></div>
 
+                <div className="content-wrap">
                   <div className="item-details">
                     <h3>Workshop on becoming a productivity ninja</h3>
                     <p>We use the science of willpower and procrastination to help you become super-productive.</p>
@@ -149,9 +149,9 @@ function App() {
                   <img src={LearnerIcon} alt="" />
                 </div>
 
-                <div className="content-wrap">
-                  <div className="item-number"><strong>3.</strong></div>
+                <div className="item-number"><strong>3.</strong></div>
 
+                <div className="content-wrap">
                   <div className="item-details">
                     <h3>Workshop on becoming a master learner</h3>
                     <p>We use the science of focused and diffuse modes to help you learn anything faster.</p>
@@ -166,9 +166,9 @@ function App() {
                   <img src={ChecklistIcon} alt="" />
                 </div>
 
-                <div className="content-wrap">
-                  <div className="item-number"><strong>4.</strong></div>
+                <div className="item-number"><strong>4.</strong></div>
 
+                <div className="content-wrap">
                   <div className="item-details">
                     <h3>Workshop on the checklist manifesto</h3>
                     <p>We use the power of checklists to train you on the meticulous execution of different processes in the workplace.</p>
